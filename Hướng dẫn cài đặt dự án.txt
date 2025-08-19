@@ -1,0 +1,58 @@
+HƯỚNG DẪN CÀI ĐẶT PHP FRAMEWORK LARAVEL VERSION 12.X
+
+B1: XAMPP
+- Download tại link: https://www.apachefriends.org/download.html (Chọn version cao nhất)
+- Install file vừa download
+
+B2: Git (Latest Version 2.49.0) 
+- Download tại link: https://git-scm.com/downloads/win
+- Install file vừa download
+
+B3: Composer (Latest Version 2.8.8)
+- Download tại link: https://getcomposer.org/download/
+- Install file vừa download
+- Trong lúc ấn install, đến trang "Choose the command-line PHP you want to use:", bạn cần
+Browse ngôn ngữ PHP đã có trong file của XAMPP (địa chỉ: ..\xampp\php\php.exe)
+- Và tiếp tục ấn Next để install
+
+B4: Laravel Version 12.x
+Hướng dẫn cụ thể tại link: https://laravel.com/docs/12.x/installation
+- Sau khi cài đủ ở 3 bước trên, bước tiếp theo là vào thư mục htdocs ở địa chỉ cài đặt XAMPP.
+Địa chỉ thường sẽ là: ..\xampp\htdocs
+- Ấn chuột phải, chọn "Open Git Bash here"
+- Nhập dòng sau: composer global require laravel/installer
+- Sau khi chờ thông báo thành công, bạn tiếp tục nhập dòng: laravel new ABC
+(Trong đó ABC là tên thư mục Project của bạn)
+- Ở đây nên nhập dòng theo tên Project đang có: laravel new SH_Test_Laravel
+- Vậy là mọi thứ cơ bản về cài đặt PHP Framework Laravel đã hoàn thành...
+
+B5: Setup Database
+- Giải nén file Project.rar, sau đó mở file sản phẩm, copy folder SH_Test_Laravel đè lên file
+vừa tạo ở B4 (Địa chỉ: ..\xampp\htdocs\SH_Test_Laravel)
+- Mở XAMPP Control Panel, ấn Start ở dòng MySQL
+- Chọn Admin ở MySQL, lúc này sẽ chuyển đến trang http://localhost/phpmyadmin/
+- Ở thanh taskbar bên trái, chọn New, nhập Database name: "elaravel", và ấn Create
+- Ở taskbar trên cùng, Chọn Import
+- Ở ô File to Import, chọn Choose File
+- Chọn file elaravel.sql nằm trong thư mục Database ở thư mục Project, sau đó ấn Open
+- Cuộn xuống cuối trang, chọn Import
+
+B6: View project demo
+- Sau khi setup Database, bạn mở XAMPP Control Panel, chọn Start ở dòng Apache
+- Chọn Admin ở Apache, lúc này sẽ chuyển đến trang http://localhost/
+- Chọn folder có tên SH_Test_Laravel
+--> Giao diện dành cho khách hàng sẽ ở link này: http://localhost/SH_Test_Laravel/
+--> Giao diện dành cho admin sẽ ở link này: http://localhost/SH_Test_Laravel/admin
+Tài khoản dành cho admin:
+- Email: hqt@gmail.com		hoặc		Email: admin@gmail.com
+- Password: 123					Password: 123
+Với tài khoản dành cho khách hàng: Có thể đăng ký/đăng nhập ở trang web
+
+Note:
+   Do thời gian khóa luận tốt nghiệp hạn chế nên project chắc chắn không tránh khỏi
+những điểm chưa hoàn chỉnh, em mới chỉ tạo đủ các chức năng cần thiết cho website mua bán hàng
+trực tuyến. Chẳng hạn như có một vài tính năng như Quản lý người dùng và Tổng quan ở trang Admin
+còn chưa được hoàn thiện, và một số tính năng khác ở giao diện dành cho khách hàng...
+   Em rất mong nhận được sự đóng góp ý kiến từ quý thầy cô để có thể cải thiện và hoàn thiện hơn 
+trong các nghiên cứu tiếp theo.
+   Em xin chân thành cảm ơn!
